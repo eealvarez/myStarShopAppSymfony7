@@ -10,3 +10,8 @@
 .env
 /.vscode/
 ###< symfony/framework-bundle ###
+
+###> php-cs-fixer/shim ###
+/.php-cs-fixer.php
+/.php-cs-fixer.cache
+###< php-cs-fixer/shim ###
