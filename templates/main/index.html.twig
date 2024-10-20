@@ -1,0 +1,58 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}
+
+	{# parent() es para traer el contenido de ese bloque de la plantilla base #}
+	{{ parent() }}
+
+	Computadoras
+
+{% endblock %}
+
+{% block body %}
+
+	<h1>
+		<strong>INFUNISA Starshop</strong>: ¡Tu tienda de accesorios de cómputo!</h1>
+
+	<div>
+		¡Busca dentro de
+		{{ numeroDeComputadoras * 10 }}
+		computadoras!
+
+
+		{% if numeroDeComputadoras > 400 %}
+
+			<p>
+				{# Esto es para determinar si la variable supera los 400 #}
+				¡Esto es un combo de computadoras!
+			</p>
+
+		{% endif %}
+
+	</div>
+
+	<div>
+		<h2>My PC</h2>
+
+		<table>
+			<tr>
+				<th>Marca</th>
+				<td>{{ myPC.marca|upper }}</td>
+			</tr>
+			<tr>
+				<th>CPU</th>
+				<td>{{ myPC.CPU }}</td>
+			</tr>
+			<tr>
+				<th>RAM</th>
+				<td>{{ myPC.RAM }}</td>
+			</tr>
+			<tr>
+				<th>HDD</th>
+				<td>{{ myPC.HDD }}</td>
+			</tr>
+		</table>
+
+	</div>
+
+{% endblock %}
