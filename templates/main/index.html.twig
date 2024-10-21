@@ -16,14 +16,16 @@
 
 	<div>
 		¡Busca dentro de
-		{{ numeroDeComputadoras * 10 }}
+		{# {{ numeroDeComputadoras * 10 }} #}
+		{{ PCs|length * 10 }}
 		computadoras!
 
 
-		{% if numeroDeComputadoras > 400 %}
+		{# {% if numeroDeComputadoras > 400 %} #}
+		{% if PCs|length > 2 %}
+			{# Esto es para determinar si la variable supera los 400 #}
 
 			<p>
-				{# Esto es para determinar si la variable supera los 400 #}
 				¡Esto es un combo de computadoras!
 			</p>
 

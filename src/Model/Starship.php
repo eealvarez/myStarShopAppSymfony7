@@ -6,10 +6,10 @@ class Starship
 {
     public function __construct(
         private int $id,
-        private string $name,
-        private string $class,
-        private string $captain,
-        private string $status,
+        private string $marca,
+        private string $CPU,
+        private string $RAM,
+        private string $HDD,
     ) {}
 
     /**
@@ -21,34 +21,34 @@ class Starship
     }
 
     /**
-     * Get the value of name
+     * Get the value of marca
      */
-    public function getName()
+    public function getMarca()
     {
-        return $this->name;
+        return $this->marca;
     }
 
     /**
-     * Get the value of class
+     * Get the value of CPU
      */
-    public function getClass()
+    public function getCPU()
     {
-        return $this->class;
+        return $this->CPU;
     }
 
     /**
-     * Get the value of captain
+     * Get the value of RAM
      */
-    public function getCaptain()
+    public function getRAM()
     {
-        return $this->captain;
+        return $this->RAM;
     }
 
     /**
-     * Get the value of status
+     * Get the value of HDD
      */
-    public function getStatus()
+    public function getHDD()
     {
-        return $this->status;
+        return $this->HDD;
     }
 }
