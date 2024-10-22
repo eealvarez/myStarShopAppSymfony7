@@ -39,7 +39,10 @@
 		<table>
 			<tr>
 				<th>Marca</th>
-				<td>{{ myPC.marca|upper }}</td>
+				<td>
+					<a href="{{ path('app_starship_show', { id: myPC.id }) }}">{{ myPC.marca|upper }}</a>
+
+				</td>
 			</tr>
 			<tr>
 				<th>CPU</th>

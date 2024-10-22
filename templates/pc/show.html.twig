@@ -1,0 +1,48 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}
+
+	{# parent() es para traer el contenido de ese bloque de la plantilla base #}
+	{# {{ parent() }} #}
+
+{{ PC.marca }}
+
+{% endblock %}
+
+	{% block body %}
+		<h1>
+	{{ PC.marca }}
+	</h1>
+
+		<table>
+
+			<tbody>
+				<tr>
+					<th>
+				CPU
+				</th>
+					<td>
+				{{ PC.CPU }}
+			</td>
+			</tr>
+
+				<tr>
+					<th>
+				RAM
+				</th>
+					<td>
+				{{ PC.RAM }}
+			</td>
+			</tr>
+				<tr>
+					<th>
+				HDD
+				</th>
+					<td>
+				{{ PC.HDD }}
+			</td>
+		</tr>
+
+	</tbody>
+
+</table>{% endblock %}
