@@ -51,4 +51,18 @@ class Starship
     {
         return $this->HDD;
     }
+
+    public function getStatusString(): string
+    {
+        return $this->HDD->value;
+    }
+
+    public function getStatusImageFilename(): string
+    {
+        return match ($this->HDD) {
+            StarshipStatusEnum::WAITING => 'images/status-waiting.png',
+            StarshipStatusEnum::IN_PROGRESS => 'images/status-in-progress.png',
+            StarshipStatusEnum::COMPLETED => 'images/status-complete.png',
+        };
+    }
 }

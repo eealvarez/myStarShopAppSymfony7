@@ -9,7 +9,7 @@ use Symfony\Component\Routing\Attribute\Route;
 
 class MainController extends AbstractController
 {
-    #[Route('/')]
+    #[Route('/', name: 'app_homepage')]
     public function index(StarshipRepository $starshipRepository): Response
     {
         // return new Response('<strong>INFUNISA Starshop</strong>: ¡Tu tienda de accesorios de cómputo!');
