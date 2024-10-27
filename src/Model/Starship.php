@@ -9,13 +9,13 @@ class Starship
         private string $marca,
         private string $CPU,
         private string $RAM,
-        private string $HDD,
+        private StarshipStatusEnum $HDD,
     ) {}
 
     /**
      * Get the value of id
      */
-    public function getId()
+    public function getId(): int
     {
         return $this->id;
     }
@@ -23,7 +23,7 @@ class Starship
     /**
      * Get the value of marca
      */
-    public function getMarca()
+    public function getMarca(): string
     {
         return $this->marca;
     }
@@ -31,7 +31,7 @@ class Starship
     /**
      * Get the value of CPU
      */
-    public function getCPU()
+    public function getCPU(): string
     {
         return $this->CPU;
     }
@@ -39,7 +39,7 @@ class Starship
     /**
      * Get the value of RAM
      */
-    public function getRAM()
+    public function getRAM(): string
     {
         return $this->RAM;
     }
@@ -47,7 +47,7 @@ class Starship
     /**
      * Get the value of HDD
      */
-    public function getHDD()
+    public function getHDD(): StarshipStatusEnum
     {
         return $this->HDD;
     }
