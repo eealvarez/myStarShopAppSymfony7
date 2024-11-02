@@ -20,3 +20,7 @@
 /public/assets/
 /assets/vendor/
 ###< symfony/asset-mapper ###
+
+###> vsc/workspace ###
+/.MySymfony7Apps.code-workspace
+###< vsc/workspace ###
